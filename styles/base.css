@@ -40,10 +40,9 @@ header a:hover{
     border-radius: 5px;
     color: #7D98A1;
 }
-
 main {
     
-    max-width: 90%;
+    width: 90%;
     margin: 0px auto;
     height: 100%;
 }
@@ -97,6 +96,7 @@ footer{
     padding: 10px;
     color: white;
     font-weight: 100;
+    width: 100%;
 }
 footer p{
     
@@ -109,7 +109,6 @@ footer p{
     height: 80px;
     margin-bottom: .5rem;
     position: relative;
-    left: 1.5rem;
     border: 1px solid rgb(0 0 0/.2);
     padding-left:2rem ;
     
@@ -147,3 +146,14 @@ footer p{
     text-align: center;
     color: yellow;
 }
+
+
+@media (max-width: 477px) {
+  main > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 1rem;
+  }
+}
+

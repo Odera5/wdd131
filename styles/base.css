@@ -148,7 +148,7 @@ footer p{
 }
 
 
-@media (max-width: 477px) {
+@media (max-width: 576px) {
   main > div {
     display: grid;
     grid-template-columns: 1fr;

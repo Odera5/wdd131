@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+     font-weight: 400;
+}
+
+header span{
+    background-color: #2274A5;
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+header nav{
+    background-color: #C0D6DF;
+    
+}
+header a{
+    text-decoration: none;
+    color: #48392A;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+header a:hover{
+    background-color: #E9F1F7;
+    padding: .5rem;
+    border-radius: 5px;
+    color: #7D98A1;
+}
+
+main {
+    
+    max-width: 90%;
+    margin: 0px auto;
+    height: 100%;
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+main>div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4px;
+    padding: 1rem;
+    
+}
+
+main section{
+    border: 1px solid rgb(0 0 0/.2);
+    border-radius: 10px;
+}
+.card h2{
+    background-color: #2274A5;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.profile-img{
+    width: 120px;
+    height: 140px;
+    float: right;
+    margin-left: .5rem;
+}
+.card #about{
+    padding: 1rem;
+    
+}
+.resource{
+    padding: 7rem 2rem;
+
+}
+
+footer{
+    background-color: #2274A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-weight: 100;
+}
+footer p{
+    
+    font-size: .7rem;
+}
+
+.nigeria-flag{
+    margin-top: 1rem;
+    width: 150px;
+    height: 80px;
+    margin-bottom: .5rem;
+    position: relative;
+    left: 1.5rem;
+    border: 1px solid rgb(0 0 0/.2);
+    padding-left:2rem ;
+    
+    
+}
+#about-nigeria{
+    margin-top: 5rem;
+    width: 80%;
+    padding: 1rem 0rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+}
+.nigeria{
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    border-bottom: 1px solid black;
+    width: 60%;
+    padding: .2rem;
+    margin-left: 4rem;
+}
+
+
+.official-flag{
+    margin: 0px auto;
+    font-style: italic;
+    width: 60%;
+    text-align: center;
+    
+    
+}
+
+#lastModified{
+    text-align: center;
+    color: yellow;
+}

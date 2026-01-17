@@ -23,3 +23,4 @@ hamburger.classList.toggle("active")
 });
 
 document.querySelector("footer span").textContent = new Date().getFullYear();
+document.getElementById("lastModified").innerHTML ="Last modification: " + document.lastModified;

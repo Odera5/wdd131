@@ -1,0 +1,14 @@
+@media screen and (min-width:576px){
+    
+    .hamburger{
+        display: none;
+    }
+    header nav{
+        display: flex;
+    }
+    main section{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+
+    }
+}

@@ -22,3 +22,4 @@ hamburger.classList.toggle("active")
  menu.classList.toggle("active");
 });
 
+document.querySelector("footer span").textContent = new Date().getFullYear();

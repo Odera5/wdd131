@@ -11,4 +11,7 @@
         width: 100%;
 
     }
+    .menu{
+        display: none;
+    }
 }

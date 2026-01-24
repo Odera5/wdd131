@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #008751;
+  --background-color: #ffffff;
+  --text-color: #222222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #cccccc;
+  padding: 1rem;
+}
+
+.weather-icon {
+  width: 60px;
+  height: auto;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  /* Weather emoji using pseudo-element */
+  .weather h2::after {
+    content: " ⛅";
+  }
+
+  /* Hide SVG icon on desktop */
+  .weather-icon {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 1rem;
+}

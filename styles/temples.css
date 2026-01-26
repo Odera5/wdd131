@@ -113,6 +113,10 @@ header a:hover{
     border-radius: 5px;
     
 }
+.home-link{
+     border-bottom: 2px solid antiquewhite;
+    border-radius: 5px;
+}
 header span{
     font-size: 1.5rem;
     font-weight: 700;

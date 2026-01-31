@@ -1,0 +1,213 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+/* Header & navigation */
+header, footer {
+  color: white;
+  background-color: #04724D;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+/* Hamburger menu */
+.hamburger {
+  width: 1.7rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  right: -1.5rem;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: .25rem;
+  background-color: white;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(0.6rem);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-0.6rem);
+}
+
+/* Slide menu */
+.menu {
+  height: 100vh;
+  width: 20rem;
+  background-color: #04A777;
+  position: fixed;
+  top: 5.55rem;
+  right: -20rem;
+  transition: right 0.3s ease;
+  box-sizing: border-box;
+}
+.menu.active { right: 0; }
+
+.menu ul {
+  list-style: none;
+  padding: 0rem 1rem;
+  margin: 0;
+}
+
+.menu li {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.menu li:hover {
+  border-bottom: 1px solid antiquewhite;
+}
+
+/* Desktop nav hidden by default */
+header nav {
+  display: none;
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+main h1 {
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#temples {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 90%;
+}
+
+/* Temple card */
+.temple-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.temple-card:hover {
+  transform: scale(1.03);
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.temple-card h3 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.temple-card p {
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: .5rem 1rem;
+  text-align: center;
+  background-color: #04724D;
+}
+
+
+@media screen and (min-width:576px){
+
+  /* Hide hamburger, show desktop nav */
+  .hamburger { display: none; }
+  header nav  { display: flex; }
+  
+  header ul{
+    display: flex;
+    gap: 2rem;
+}
+header li{
+    list-style: none;
+    height: 100%;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    
+}
+header a:hover{
+    border-bottom: 2px solid antiquewhite;
+    border-radius: 5px;
+    
+}
+.home-link{
+     border-bottom: 2px solid antiquewhite;
+    border-radius: 5px;
+}
+  /* Main grid: 3 columns */
+  #temples {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .menu { display: none; } /* hide mobile menu */
+}

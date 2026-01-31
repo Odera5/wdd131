@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Develop responsive web pages that follow best practices">
+    <meta name="author" content="Kingsley Ani">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="script/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span>Temple Album</span>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home" class="home-link">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="small">Small</a></li>
+                <li><a href="#" id="large">Large</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <!-- Temple cards will be dynamically inserted here -->
+        <div id="temples"></div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> | Kingsley Ani | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

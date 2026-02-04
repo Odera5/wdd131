@@ -3,59 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Country page featuring Nigeria with data and weather information.">
+  <meta name="description" content="country page">
   <meta name="author" content="Kingsley Ani">
-  <title>Nigeria | Country Page</title>
-
   <link rel="stylesheet" href="styles/place.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+  <title>Country page</title>
   <script src="scripts/place.js" defer></script>
 </head>
 <body>
-
   <header>
-    <h1>Nigeria</h1>
+    <span>Germany</span>
   </header>
-
   <main>
-    
-    <section class="hero">
+  
       <picture>
-        <source srcset="images/nigeria.webp" media="(max-width: 500px)">
-        <source srcset="images/nigeria.webp" media="(max-width: 1000px)">
-        <img src="images/nigeria.webp" alt="Scenic view of Nigeria">
+        <source srcset="./images/germany-large.webp" media="(min-width:760px)">
+        <source srcset="./images/germany-medium.webp" media="(min-width: 512px)">
+        <img src="./images/germany-small.webp" alt="Scenic view of Germany">
       </picture>
-    </section>
-
     
-    <section class="card data">
+
+    <section class="data-section">
       <h2>Data</h2>
-      <ul>
-        <li><strong>Capital:</strong> Abuja</li>
-        <li><strong>Population:</strong> 220+ million</li>
-        <li><strong>Currency:</strong> Naira (₦)</li>
-        <li><strong>Region:</strong> West Africa</li>
-      </ul>
+      <div class="data">
+      </div>
     </section>
-
-    
-    <section class="card weather">
+    <section class="weather-section">
       <h2>Weather</h2>
-
-      
-      <img class="weather-icon" src="images/weather-icons.svg" alt="Weather icon">
-
-      <p>Temperature: <span id="temp">28</span> °C</p>
-      <p>Wind Speed: <span id="wind">10</span> km/h</p>
-      <p>Wind Chill: <span id="windchill"></span></p>
+      <img class="weather-icon" src="./images/cloud-sun-fill.svg" >
+      <div class="temp"></div>
     </section>
   </main>
-
   <footer>
-    <p>
-      © <span id="year"></span> | Ani Kingsleyodera |
-      Last Modified: <span id="lastModified"></span>
-    </p>
+    <p>&copy;<span class="copyright"></span> | Kingsley Ani | Nigeria </p>
+    <p class="lastModified"></p>
   </footer>
-
 </body>
 </html>

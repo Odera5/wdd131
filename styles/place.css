@@ -1,72 +1,91 @@
-:root {
-  --primary-color: #008751;
-  --background-color: #ffffff;
-  --text-color: #222222;
-}
-
-* {
+*{
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
-
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+body{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
 }
 
-header {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
+header, footer{
+background-color: #eb0b38;
+padding: 1.5rem;
+text-align: center;
+color: white;
 }
-
-.hero img {
+header span{
+  display: block;
+  font-weight: 700;
+  font-size: 2rem;
+}
+main{
+   display: flex;
+   flex-direction: column;
+}
+picture img{
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
 }
-
-main {
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
+section{
+  border: 1px solid rgb(0 0 0 /0.1);
 }
-
-.card {
-  border: 1px solid #cccccc;
-  padding: 1rem;
-}
-
-.weather-icon {
-  width: 60px;
-  height: auto;
-}
-
-/* DESKTOP VIEW */
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .hero {
-    grid-column: 1 / -1;
-  }
-
-  /* Weather emoji using pseudo-element */
-  .weather h2::after {
-    content: " ⛅";
-  }
-
-  /* Hide SVG icon on desktop */
-  .weather-icon {
-    display: none;
-  }
-}
-
-footer {
-  background-color: #f4f4f4;
+section h2{
   text-align: center;
   padding: 1rem;
+  margin-bottom: .5rem;
+}
+section .weather-icon{
+  display: block;
+  margin: 0 auto;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+li{
+  list-style: none;
+  line-height: 2.5rem;
+}
+
+footer p{
+  text-align: center;
+  
+}
+
+@media  screen and (min-width:512px) {
+  main{
+  position: relative;
+  }
+  .data-section,.weather-section{
+    position: absolute;
+    background-color: #FAF9F9;
+    padding: 2rem;
+    font-size: .8rem;
+    opacity: .6;
+  }
+  .weather-section{
+    right: 2rem;
+    top: 24rem;
+
+  }
+  .data-section{
+    top:3rem;
+    left:2rem;
+  }
+  li{
+    line-height: 2rem;
+  }
+  section h2{
+    background-color: yellow;
+    opacity: 1;
+    position: relative;
+    
+  }
 }

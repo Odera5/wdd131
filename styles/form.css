@@ -73,3 +73,10 @@ input[type="submit"]:hover {
 .confirmation {
   text-align: center;
 }
+/* Simple media query for mobile screens */
+@media (max-width: 600px) {
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}

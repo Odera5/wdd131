@@ -1,0 +1,75 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+}
+
+header, footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+label, legend {
+  font-weight: 600;
+  margin-top: 1rem;
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.4rem;
+}
+
+/* ✅ Required field visual indicator */
+.required {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+/* ✅ Better keyboard accessibility (Lighthouse boost) */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #0055aa;
+  outline-offset: 2px;
+}
+
+input[type="submit"] {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #0055aa;
+}
+
+.confirmation {
+  text-align: center;
+}

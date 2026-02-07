@@ -6,11 +6,18 @@ const products = [
   { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
-const select = document.getElementById("product");
+// Populate product select menu
+const productSelect = document.getElementById("product");
 
 products.forEach(product => {
   const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  select.appendChild(option);
+  option.value = product.id;       // value uses product id
+  option.textContent = product.name; // display uses product name
+  productSelect.appendChild(option);
 });
+
+// Footer year (external JS only — audit compliant)
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Submit a product review using our easy-to-use product review form.">
+  <meta name="author" content="Kingsley Ani">
   <title>Product Review Form</title>
   <link rel="stylesheet" href="styles/form.css">
   <script defer src="scripts/form.js"></script>
@@ -30,11 +31,26 @@
       <legend>
         Overall Rating <span class="required">*</span>
       </legend>
-      <label><input type="radio" name="rating" value="1" required> ☆</label>
-      <label><input type="radio" name="rating" value="2"> ☆☆</label>
-      <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-      <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-      <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+
+      <label for="rating1">
+        <input type="radio" id="rating1" name="rating" value="1" required> ☆
+      </label>
+
+      <label for="rating2">
+        <input type="radio" id="rating2" name="rating" value="2" required> ☆☆
+      </label>
+
+      <label for="rating3">
+        <input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆
+      </label>
+
+      <label for="rating4">
+        <input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆
+      </label>
+
+      <label for="rating5">
+        <input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆
+      </label>
     </fieldset>
 
     <!-- Date -->
@@ -46,10 +62,26 @@
     <!-- Features -->
     <fieldset>
       <legend>Useful Features</legend>
-      <label><input type="checkbox" name="features" value="durability"> Durability</label>
-      <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-      <label><input type="checkbox" name="features" value="design"> Design</label>
-      <label><input type="checkbox" name="features" value="performance"> Performance</label>
+
+      <label for="feature1">
+        <input type="checkbox" id="feature1" name="features" value="durability">
+        Durability
+      </label>
+
+      <label for="feature2">
+        <input type="checkbox" id="feature2" name="features" value="ease">
+        Ease of Use
+      </label>
+
+      <label for="feature3">
+        <input type="checkbox" id="feature3" name="features" value="design">
+        Design
+      </label>
+
+      <label for="feature4">
+        <input type="checkbox" id="feature4" name="features" value="performance">
+        Performance
+      </label>
     </fieldset>
 
     <!-- Review -->
@@ -69,10 +101,6 @@
 <footer>
   <p>© <span id="year"></span> Brigham Young University–Idaho</p>
 </footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
